@@ -146,6 +146,12 @@ var deleteTheBigNumbers = {
 
 //Code Here
 
+for(let key in deleteTheBigNumbers){
+  if(deleteTheBigNumbers[key] > 100){
+    delete deleteTheBigNumbers[key]
+  }
+}
+
 
 
 ////////// PROBLEM 7 //////////
