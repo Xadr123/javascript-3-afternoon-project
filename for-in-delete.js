@@ -40,7 +40,14 @@
 */
 
 function showValues( obj ) {
-  //Code Here
+  let result = []
+  for(let key in obj){
+    console.log(result)
+    result.push(obj[key])
+  }
+  let string = result.join('')
+  console.log(string)
+  return string
 }
 
 
@@ -54,6 +61,14 @@ function showValues( obj ) {
 */
 
 //Code Here
+function greaterThan10(obj){
+  for(let key in obj){
+    if(obj[key] > 10){
+      obj[key] = 0
+    }
+  }
+  return obj
+}
 
 
 
